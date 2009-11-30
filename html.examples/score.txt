@@ -1,0 +1,36 @@
+<div class="main">
+ <table class="details">
+  <tr>
+   <td class="profline">
+    submitted on
+   </td>
+   <td>
+    14 Mar 2008
+   </td>
+  </tr>
+  <tr>
+   <td class="profline">
+    points
+   </td>
+   <td>
+    1
+   </td>
+  </tr>
+  <tr>
+   <td class="profline">
+    up votes
+   </td>
+   <td>
+    1
+   </td>
+  </tr>
+  <tr>
+   <td class="profline">
+    down votes
+   </td>
+   <td>
+    0
+   </td>
+  </tr>
+ </table>
+</div>

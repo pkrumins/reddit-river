@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+#if $varExists('subreddits')
+<title>reddit river: subreddits</title>
+#else if $varExists('about')
+<title>reddit river: about</title>
+#else if $varExists('user_stats')
+<title>reddit river: #if $varExists('subreddit') then $subreddit else '' # stats</title>
+#else if $varExists('subreddit')
+<title>reddit river: what flows in $subreddit!</title>
+#else
+<title>reddit river: what flows online!</title>
+#end if
+
+<meta name="description" content="reddit river: mobile version of reddit.com">
+
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<link rel="shortcut icon" href="/static/favicon.ico">
+</head>
+
+<body>
+  <table class="header" width="100%" border="0">
+    <tr>
+     <td class="logo" width="100"><a href="/"><img src="/static/logo.gif" alt="reddit river" border="0" width="60" height="30"></a></td>
+     <td class="menu">
+      <a href="/reddits/">subreddits</a> |
+      #if $varExists('subreddit')
+      <a href="/stats/$subreddit/">top stats</a> |
+      #else
+      <a href="/stats/">top stats</a> |
+      #end if
+      <a href="/about/">about</a>
+     </td>
+    </tr>
+  </table>

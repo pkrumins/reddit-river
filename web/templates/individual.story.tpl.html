@@ -1,0 +1,9 @@
+<p class="story">
+ <a href="#if $story.url_mobile then $story.url_mobile else $story.url #">$story.title</a>
+ <span class="domain">($story.host)</span><br>
+ #if $story.score > 0
+  <span class="info">($story.score #if $story.score == 1 then 'point' else 'points'# posted $story.niceago by $story.user)</span>
+ #else
+  <span class="info">(posted $story.niceago by $story.user)</span>
+ #end if
+</p>

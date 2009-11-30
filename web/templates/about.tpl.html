@@ -1,0 +1,21 @@
+#include "common.header.tpl.html"
+
+<div class="about">
+ <h2>Idea</h2>
+  <p>Long story short, I made reddit river so it was easier for me to read reddit on my way home from university which takes a good 30 minutes.</p>
+  <p>The basic idea of the project was to make a lightweight version of reddit which would keep track of stories on the front page and the most popular subreddits.</p>
+ <h2>Programming</h2>
+  <p>The project was done in Python programming language (reddit.com is also written in this language).</p>
+  <p>There are two parts to the project - this website, done with help of web.py, and a bunch of programs which monitor the front page and subreddits for changes, keep database up to date, and find mobile versions of stories posted. For example, a link to youtube.com would get rewritten to mobile version of youtube - m.youtube.com, or a link to a page with 'print this page' link, would get rewritten to that url.</p>
+  <p>As always, I am providing the source code to my project: <a href="http://www.catonmat.net/download/redditriver-dot-com-python-source-code.zip">download redditriver.com source code</a>.</p>
+  <p>I wrote a detailed post "<a href="http://www.catonmat.net/blog/designing-redditriver-dot-com-website">designing redditriver.com website</a>" on my blog. Read it to understand what each program does.</p>
+ <h2>Me</h2>
+  <p>My name is Peteris Krumins and I am a last year physics student at University of Latvia.</p>
+  <p>I write a programming blog at <a href="http://www.catonmat.net">good coders code, great reuse</a>.</p>
+  <p>Trivia - my favorite subreddit is <a href="/r/programming/">programming</a>.</p>
+  <img src="/static/peteris-krumins-reddit.jpg" alt="Peteris Krumins with a reddit t-shirt">
+ <h2>PS. A related project</h2>
+  <p>If you liked this site, check out the <a href="http://reddit.picurls.com">picture subreddit with preview thumbnails</a> (http://reddit.picurls.com) which I made a while ago.</p>
+</div>
+
+#include "common.footer.tpl.html"

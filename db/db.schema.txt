@@ -1,0 +1,43 @@
+/*
+** Copyright (C) 2008 Peteris Krumins (peter@catonmat.net)
+** http://www.catonmat.net  -  good coders code, great reuse
+** 
+** redditriver.com website database schema for SQLite database
+**
+** Read how redditriver.com was designed at:
+** http://www.catonmat.net/blog/designing-redditriver-dot-com-website
+*/
+
+BEGIN TRANSACTION;
+
+CREATE TABLE subreddits (
+  id           INTEGER  PRIMARY KEY  AUTOINCREMENT,
+  reddit_name  TEXT     NOT NULL     UNIQUE,
+  name         TEXT     NOT NULL     UNIQUE,
+  description  TEXT,
+  subscribers  INTEGER  NOT NULL,
+  position     INTEGER  NOT NULL,
+  active       BOOL     NOT NULL     DEFAULT 1
+);
+
+INSERT INTO subreddits (id, reddit_name, name, description, subscribers, position) VALUES (0, 'front_page', 'reddit.com front page', 'since subreddit named reddit.com has different content than the reddit.com frontpage, we need this', 0, 0);
+
+CREATE TABLE stories (
+  id            INTEGER    PRIMARY KEY  AUTOINCREMENT,
+  title         TEXT       NOT NULL,
+  url           TEXT       NOT NULL,
+  url_mobile    TEXT,
+  reddit_id     TEXT       NOT NULL,
+  subreddit_id  INTEGER    NOT NULL,
+  score         INTEGER    NOT NULL,
+  comments      INTEGER    NOT NULL,
+  user          TEXT       NOT NULL,
+  position      INTEGER    NOT NULL,
+  date_reddit   UNIX_DATE  NOT NULL,
+  date_added    UNIX_DATE  NOT NULL
+);
+
+CREATE UNIQUE INDEX idx_unique_stories ON stories (title, url, subreddit_id);
+
+COMMIT;
+

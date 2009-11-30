@@ -1,0 +1,13 @@
+#include "common.header.tpl.html"
+ <p class="subreddits">
+  most popular subreddits:
+ </p>
+ #for subreddit in $subreddits
+  <p class="subreddit">
+    <a href="/r/$subreddit.reddit_name/">$subreddit.name</a>
+    <span class="info">(/r/$subreddit.reddit_name/)</span><br>
+    <span class="info2">$subreddit.subscribers subscribers</span>
+    <span class="desc">#if len($subreddit.description) then ' -- ' + $subreddit.description else '' #</span>
+  </p>
+ #end for
+#include "common.footer.tpl.html"

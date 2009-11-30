@@ -1,0 +1,34 @@
+<div id="thingrow_t5_2qh33" class="even">
+ <div id="thingCol2_t5_2qh33" class="midcol">
+  <input type="checkbox" onchange="subscribe(this, 't5_2qh33');" onclick="this.blur();" />
+ </div>
+ <div id="thingCol3_t5_2qh33" style="margin-left: 0ex; margin-top: 0px; ">
+  <div id="entry_t5_2qh33" class="entry">
+   <div class="titlerow reddit">
+    <a id="title_t5_2qh33" class="title" href="/r/funny/">
+     funny
+    </a>
+    <span class="little">
+     &#32;(/r/funny/)
+    </span>
+   </div>
+   <div>
+    Unfunny material will be downvoted mercilessly.
+   </div>
+   <div class="little">
+    <span class="inside" id="score_t5_2qh33">
+     2298 subscribers
+    </span>
+    &#32;
+    <a href="/r/funny/about">
+     about
+    </a>
+    &nbsp;
+   </div>
+  </div>
+  <div id="child_t5_2qh33" class="thing-children">
+  </div>
+ </div>
+ <div style="clear: left">
+ </div>
+</div>

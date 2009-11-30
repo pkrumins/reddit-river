@@ -1,0 +1,13 @@
+#include "common.header.tpl.html"
+
+<p class="stats">past week's top #if $varExists('subreddit') then $subreddit else ''# stories:</p>
+#for story in $story_stats
+ #include "individual.story.tpl.html"
+#end for
+
+<p class="stats">all time top #if $varExists('subreddit') then $subreddit else ''# redditers (based on data in redditriver's database):</p>
+#for pos, user in $enumerate($user_stats)
+<p class="user">#echo $pos + 1#. $user.user ($user.stories #if $user.stories > 1 then 'stories' else 'story'#)</p>
+#end for
+
+#include "common.footer.tpl.html"

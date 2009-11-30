@@ -1,0 +1,33 @@
+#include "common.header.tpl.html"
+ #if $next_page or $prev_page
+  <p class="more">view more: 
+   #if $prev_page
+    <a href="$prev_page_link">&lt;-- prev page</a>
+   #end if
+   #if $next_page and $prev_page
+    |
+   #end if
+   #if $next_page
+    <a href="$next_page_link">next page --&gt;</a>
+   #end if
+  </p>
+ #end if
+
+ #for story in $stories
+  #include "individual.story.tpl.html"
+ #end for
+
+ #if $next_page or $prev_page
+  <p class="more">view more: 
+   #if $prev_page
+    <a href="$prev_page_link">&lt;-- prev page</a>
+   #end if
+   #if $next_page and $prev_page
+    |
+   #end if
+   #if $next_page
+    <a href="$next_page_link">next page --&gt;</a>
+   #end if
+  </p>
+ #end if
+#include "common.footer.tpl.html"

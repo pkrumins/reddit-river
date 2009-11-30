@@ -1,0 +1,43 @@
+<div id="thingrow_t3_6bp8e" class="odd">
+ <div class="numbercol" style="width:3.0ex;" id="thingCol1_t3_6bp8e">
+  15.
+ </div>
+ <div id="thingCol2_t3_6bp8e" class="midcol">
+  <div id="up_t3_6bp8e" class="arrow up" onclick="javascript:mod('t3_6bp8e', 1)" style="">
+  </div>
+  <div id="down_t3_6bp8e" class="arrow down" onclick="javascript:mod('t3_6bp8e', 0)" style="">
+  </div>
+ </div>
+ <div id="thingCol3_t3_6bp8e" style="margin-left: 6.0ex; margin-top: 0px; ">
+  <div id="entry_t3_6bp8e" class="entry">
+   <div id="titlerow_t3_6bp8e" class="titlerow">
+    <a id="title_t3_6bp8e" onmousedown="setClick(this)" class="title " href="http://fieldandstream.blogs.com/gunnut/2008/03/the-worlds-larg.html">
+     I have no idea how this kind of photography is possible, but this camera stays with a tank shell for 500 yards.
+    </a>
+    &#32;
+    <span class="little">
+     (fieldandstream.blogs.com)
+    </span>
+   </div>
+   <div class="little">
+    <span class="inside" id="score_t3_6bp8e">
+     252 points
+    </span>
+    &nbsp;posted&nbsp;8 hours&nbsp;ago&nbsp;by&nbsp;
+    <a href="/user/tsteele93/">
+     tsteele93
+    </a>
+    &#32;
+    <span id="comment_t3_6bp8e">
+     <a href="/info/6bp8e/comments/" class="bylink" target="_parent">
+      98 comments
+     </a>
+    </span>
+   </div>
+  </div>
+  <div id="child_t3_6bp8e" class="thing-children">
+  </div>
+ </div>
+ <div style="clear: left">
+ </div>
+</div>
